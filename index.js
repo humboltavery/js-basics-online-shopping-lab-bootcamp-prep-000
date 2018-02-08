@@ -60,10 +60,10 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
-    if (cart[i].hasOwnProperty(item) === -1) {
-      alert('That item is not in your cart.');
-    } else {
+    if (cart[i].hasOwnProperty(item) {
       delete cart[i][item];
+    } else {
+      alert('')
     }
   }
   return cart;
