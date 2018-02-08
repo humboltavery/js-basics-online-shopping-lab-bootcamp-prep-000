@@ -68,7 +68,7 @@ function removeFromCart(item) {
   }
     
     if (isInCart === false) {
-    alert('That item is not in your cart.')
+    console.log('That item is not in your cart.')
   }
   
   return cart;
