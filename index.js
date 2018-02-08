@@ -59,12 +59,18 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var isInCart = false
+  
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].hasOwnProperty(item)) {
-      delete cart[i][item];
-    } 
+      isInCart = true;
+    }
+  }
+    
+    if (isInCart === false) {
     alert('That item is not in your cart.')
   }
+  
   return cart;
 }
 
